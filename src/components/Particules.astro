@@ -1,6 +1,6 @@
 ---
 import Cards from './Cards.astro'
-
+import LineLight from './LineLight.astro'
 const textCardVelocity:string = "Agilidade e rapidez em nosso trabalho é uma das essências da 2Core. Além do mais, cada minuto conta sem nossos serviços."
 const textCardTechnology:string = "Utilizando as mais atuais e rápidas tecnologias do mercado, entregamos softwares com a melhor qualidade."
 const textCardSecurity:string = "Suas informações estão protegidas conosco, mediante contratos e garantias de primeira categoria."
@@ -10,10 +10,10 @@ const textCardSecurity:string = "Suas informações estão protegidas conosco, m
 
 <div class="w-full pb-[50px] bg-primary  flex justify-center">
     <div class="w-11/12 flex flex-col max-md:items-center">
-        <div class="w-full h-[3px] mt-[40px] bg-white drop-shadow-line rounded-full"></div>
-        <p class="text-lightBlue mt-[15px] font-[500] text-[2.6rem] max-md:text-[2.2rem]  font-Inter">Por quê nos escolher?</p>
-        <p class="text-white mt-[30px] text-[5rem] max-lg:text-[3.8rem] max-md:text-[2.5rem] max-md:text-center font-[500] font-Inter">Nosso objetivo é fazer sua empresa<br/> crescer, e fazemos isto muito bem!</p>
-        <p class="text-[#C3C3C3] mt-[30px] text-[2.6rem] font-[500] font-Inter">Nossas qualidades:</p>
+        <LineLight />
+        <p class="text-lightBlue mt-[25px] font-[500] text-[2.6rem] max-sm:text-[2.2rem] max-ls:text-[2rem] font-Inter max-ls:text-center hover:scale-[1.10]">Por quê nos escolher?</p>
+        <p class="text-white mt-[30px] text-[5rem] max-lg:text-[3.8rem] max-md:text-[3.3rem] max-sm:text-[3rem] max-ls:text-[2.5rem] max-md:text-center font-[500] font-Jost">Nosso objetivo é fazer sua empresa<br/> crescer, e fazemos isto muito bem!</p>
+        <p class="text-[#C3C3C3] mt-[30px] text-[2.6rem] max-sm:text-[2.3rem] font-[500] font-Inter">Nossas qualidades:</p>
         <div class="flex max-md:flex-col justify-between flex-wrap"> 
             <Cards titleCard="Velocidade" textCard={textCardVelocity}/> 
             <Cards titleCard="Tecnologia" textCard={textCardTechnology}/> 
