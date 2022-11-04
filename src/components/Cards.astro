@@ -1,0 +1,33 @@
+---
+export interface Props{
+    titleCard:string
+    textCard:string
+}
+
+const {titleCard, textCard} = Astro.props
+---
+
+<div id="container" >
+    <div  id="card" class="w-[350px] max-ls:w-[280px] h-[412px] max-md:h-[350px] bg-gradient-to-br from-[rgba(1,52,83,1)] via-[#385D75] to-[rgba(1,52,83,1)] border-solid border-2 border-white rounded-[12px] mt-[50px] max-ls:mt-[20px] px-[2%] flex flex-col max-md:items-center">
+        <p id="titleCard" class="mt-[10%] text-white text-[4rem] max-md:text-[3rem] font-[500]">{titleCard}</p>
+        <div class="w-[150px] h-[4px] bg-white"></div>
+        <p id="textCard" class="font-[400] text-white text-[2.4rem] max-md:text-[2rem] mt-[20px] max-md:text-center">{textCard}</p>
+    </div>
+</div>
+
+<script>
+    const card = document.querySelector("#card") as HTMLElement;
+    const container = document.querySelector("#container") as HTMLElement;
+
+    container.addEventListener("mousemove", (e) => {
+        let xAxis = (window.innerWidth / 5 - e.pageX) / 30;
+        let yAxis = (window.innerHeight / 2 - e.pageY) / 30;
+
+        card.style.transform = `rotateY(${yAxis}deg) rotateX(${xAxis}deg)`;
+    })
+
+    container.addEventListener("mouseleave", (e) => {
+        card.style.transition = "all o.5s ease"
+        card.style.transform = "rotateY(0deg) rotateX(0deg)";
+    })
+</script>

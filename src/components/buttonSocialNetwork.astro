@@ -1,0 +1,132 @@
+---
+import IconTwitter from '../image/icons/iconTwitter.svg'
+import IconFacebook from '../image/icons/iconFacebook.svg'
+import IconInstagram from '../image/icons/iconInstagram.svg'
+import IconExclamation from '../image/icons/iconExclamation.svg'
+import IconClose from '../image/icons/iconClose.svg'
+---
+    
+    <div class="fixed bottom-[70px] right-[-20px]">
+        <div id='pulse' class="flex justify-center items-center">
+
+            <img id="buttonOpenNetwork"src={IconExclamation} class="before:hidden after:hidden"/>
+            <img id="buttonCloseNetwork" src={IconClose} class="hidden before:hidden after:hidden"/>
+    
+        </div>
+        <div id="icons" class="absolute w-[54px] duration-300 rounded-full -bottom-[250px] right-[30px] h-[180px] bg-[#65c0e7] flex flex-col items-center">
+            <img src={IconInstagram} class="w-[30px] h-[30px] mt-[10px]"  alt="icone instagram"/>
+            <img src={IconFacebook} class="w-[30px] h-[30px] my-[10px]" alt="icone facebook"/>
+            <img src={IconTwitter} class="w-[30px] h-[30px]"/>
+        </div>
+    </div>
+
+    
+    <script>
+        const icons = document.getElementById('icons') as HTMLElement;
+        const pulse = document.getElementById('pulse') as HTMLElement;
+        const buttonOpenNetwork = document.getElementById('buttonOpenNetwork') as HTMLElement;
+        const buttonCloseNetwork = document.getElementById('buttonCloseNetwork') as HTMLElement;
+        var buttonNetwork = false
+        pulse.addEventListener('click', () => {
+            if(buttonNetwork === true){
+                pulse.classList.remove("after:hidden")
+                pulse.classList.remove("before:hidden") 
+                icons.classList.add("-bottom-[250px]")
+                icons.classList.remove("-bottom-[50px]")
+                buttonOpenNetwork.classList.remove("hidden")
+                buttonCloseNetwork.classList.add("hidden")
+                buttonNetwork = false
+            } else if (buttonNetwork === false){
+                pulse.classList.add("after:hidden")
+                pulse.classList.add("before:hidden") 
+                icons.classList.remove("-bottom-[250px]")
+                icons.classList.add("-bottom-[50px]")
+                buttonOpenNetwork.classList.add("hidden")
+                buttonCloseNetwork.classList.remove("hidden")
+                buttonNetwork = true
+            }
+        
+        });
+        
+        </script>
+
+
+
+    <style>
+
+
+    #pulse{
+
+    height: 5rem;
+
+    width: 5rem;
+
+    background: linear-gradient(
+
+    #65c0e7,
+
+        #22a5dd
+
+    );
+
+    border-radius: 50%;
+
+    right: 30px;
+
+    position: absolute;
+
+    place-items: center;
+
+    font-size: 2rem;
+
+    color: #fff;
+    z-index: 2;
+    }
+
+    #pulse:before,
+
+    #pulse:after{
+
+    content: "";
+
+    position: absolute;
+
+    height: 100%;
+
+    width: 100%;
+
+    background-color: #65c0e7;
+
+    border-radius: 50%;
+
+    z-index: 1;
+
+    opacity: 0.7;
+
+    }
+
+    #pulse:before{
+
+    animation: pulse 2s ease-out infinite;
+
+    }
+
+    #pulse:after{
+
+    animation: pulse 2s 1s ease-out infinite;
+
+    }
+
+    @keyframes pulse{
+
+    100%{
+
+        transform: scale(2.5);
+
+        opacity: 0;
+
+    }
+
+    }
+
+    </style>

@@ -1,0 +1,47 @@
+---
+import IconArrowRight from '../image/icons/iconArrowRight.svg'
+import IconTwitter from '../image/icons/iconTwitter.svg'
+import IconFacebook from '../image/icons/iconFacebook.svg'
+import IconInstagram from '../image/icons/iconInstagram.svg'
+
+---
+
+<div class=" w-full">
+    <div class="w-full  bg-[url('src/image/img/backgroundHero.webp')] bg-no-repeat bg-cover flex justify-center pb-[30px]">
+        <div class="w-11/12 mt-[20px]">
+            <div class="w-full flex justify-between "> 
+                <div>
+                    <h1 class="text-white text-[10rem] max-xl:text-[8rem] max-lg:text-[6rem] max-md:text-[6rem]  max-sm:text-[4rem] max-ls:text-[3.3rem] leading-[12rem] max-xl:leading-[10rem] max-sm:leading-[6rem] mt-[40px] font-[500]">
+                        Sofisticação e<br/> inteligencia para <br/> empresas
+                    </h1>
+                    <div class="group inline-flex items-center mt-[100px] max-sm:mt-[60px]">
+                        <a class="group-hover:scale-110 underline font-Inter font-[500] text-[3.2rem] max-sm:text-[2.3rem] text-white  mr-[30px] max-sm:mr-[20px]">
+                            Contate-nos
+                        </a>
+                        <img src={IconArrowRight}  class="group-hover:scale-110 w-[80px] h-[80px] max-md:w-[60px] max-md:h-[60px] max-sm:w-[50px] cursor-pointer" alt="Icone de uma flecha"/>
+                    </div>
+                </div>
+
+                <div id="divIcons" class="ease-in-out duration-700 max-sm:fixed w-[70px] max-sm:h-[180px] max-sm:w-[50px] max-sm:py-2 max-sm: max-sm:bg-lightBlue   rounded-full flex flex-col max-sm:bottom-[-200px] max-sm:right-[10px] items-center">
+                    <img src={IconInstagram} class="cursor-pointer w-[40px] max-sm:w-[30px] h-[40px] max-sm:h-[30px] max-sm:mt-[0] mt-[80px] hover:scale-125 "  alt="icone instagram"/>
+                    <img src={IconFacebook} class="cursor-pointer w-[40px] max-sm:w-[30px] h-[40px] max-sm:h-[30px]  max-sm:mt-[10px] mt-[80px] hover:scale-125 mb-[10px]" alt="icone facebook"/>
+                    <img src={IconTwitter} class="cursor-pointer w-[40px] max-sm:w-[30px] h-[40px] max-sm:h-[30px]  max-sm:mt-[0] mt-[80px] hover:scale-125" alt="icone twitter"/>
+                    <i class="max-sm:hidden bg-white w-[5px] h-[200px] mt-[40px]"></i>
+                    <div id='buttonClosed' class="w-[50px] flex justify-center mt-[2px] hover:scale-125">
+
+                    </div>
+                </div>
+            </div>
+
+                <!-- <div class="fixed hidden max-sm:right-[10px] bottom-10 max-sm:flex justify-center items-center border-solid border-2 border-white rounded-full"> -->
+                <!-- <button title="button" id="socialNetwork" type="button" class="relative w-[50px] h-[50px] bg-lightBlue  text-white rounded-full items-center justify-center flex  
+                before:w-[5px] before:h-[35px]  before:block before:bg-white before:absolute
+                after:w-[5px] after:h-[35px]  after:block after:bg-white after:absolute after:rotate-90 ease-in-out duration-1000">
+                </button> -->
+
+
+        </div>
+    </div>
+</div>
+
+
