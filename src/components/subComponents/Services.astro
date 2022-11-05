@@ -1,0 +1,14 @@
+---
+export interface Props{
+    typeServices:string
+}
+
+const {typeServices} = Astro.props
+---
+
+<div class="group hover:bg-secondary hover:bg-opacity-40 w-full before:w-full before:h-[2px] before:bg-[#C3C3C3] before:block ">
+    <div class="flex justify-between items-center">
+        <p class="group-hover:text-black font-Inter text-[4.5rem] max-md:text-[3rem] max-ls:text-[2.5rem]  my-[20px]  max-md:my-[15px] ml-[20px] group-hover:scale-110">{typeServices}</p>
+        <img src="/icons/iconArrowDiagonal.svg" alt="flecha apontando para a diagonal direita superior" class="group-hover:invert w-[37px] h-[37px] max-sm:w-[27px]  mr-[20px] group-hover:scale-110"/>
+    </div>
+</div>

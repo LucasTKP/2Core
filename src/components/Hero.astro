@@ -1,12 +1,3 @@
----
-import IconArrowRight from '../image/icons/iconArrowRight.svg'
-import IconTwitter from '../image/icons/iconTwitter.svg'
-import IconFacebook from '../image/icons/iconFacebook.svg'
-import IconInstagram from '../image/icons/iconInstagram.svg'
-
-
----
-
 <div class=" w-full">
     <div id="hero" class="w-full bg-no-repeat bg-cover flex justify-center pb-[30px]">
         <div class="w-11/12 mt-[20px]">
@@ -19,14 +10,14 @@ import IconInstagram from '../image/icons/iconInstagram.svg'
                         <a class="group-hover:scale-110 underline font-Inter font-[500] text-[3.2rem] max-sm:text-[2.3rem] text-white  mr-[30px] max-sm:mr-[20px]">
                             Contate-nos
                         </a>
-                        <img src={IconArrowRight}  class="group-hover:scale-110 w-[80px] h-[80px] max-md:w-[60px] max-md:h-[60px] max-sm:w-[50px] cursor-pointer" alt="Icone de uma flecha"/>
+                        <img src="/icons/iconArrowRight.svg"  class="group-hover:scale-110 w-[80px] h-[80px] max-md:w-[60px] max-md:h-[60px] max-sm:w-[50px] cursor-pointer" alt="Icone de uma flecha"/>
                     </div>
                 </div>
 
                 <div id="divIcons" class="ease-in-out duration-700 max-sm:hidden w-[70px] rounded-full flex flex-col items-center">
-                    <img src={IconInstagram} class="cursor-pointer w-[40px]  h-[40px]   mt-[80px] hover:scale-125 "  alt="icone instagram"/>
-                    <img src={IconFacebook} class="cursor-pointer w-[40px]  h-[40px]   mt-[80px] hover:scale-125 mb-[10px]" alt="icone facebook"/>
-                    <img src={IconTwitter} class="cursor-pointer w-[40px]  h-[40px]    mt-[80px] hover:scale-125" alt="icone twitter"/>
+                    <img src="/icons/iconFacebook.svg" class="cursor-pointer w-[40px]  h-[40px]   mt-[80px] hover:scale-125 "  alt="icone instagram"/>
+                    <img src="/icons/iconInstagram.svg" class="cursor-pointer w-[40px]  h-[40px]   mt-[80px] hover:scale-125 mb-[10px]" alt="icone facebook"/>
+                    <img src="/icons/iconTwitter.svg" class="cursor-pointer w-[40px]  h-[40px]    mt-[80px] hover:scale-125" alt="icone twitter"/>
                     <i class="max-sm:hidden bg-white w-[5px] h-[200px] mt-[40px]"></i>
                     <div id='buttonClosed' class="w-[50px] flex justify-center mt-[2px] hover:scale-125">
                     </div>
@@ -40,6 +31,6 @@ import IconInstagram from '../image/icons/iconInstagram.svg'
 
 <style>
     #hero{
-        background-image: url("../image/img/backgroundHero.webp");
+        background-image: url("/img/backgroundHero.webp");
     }
 </style>
