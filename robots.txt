@@ -2,8 +2,6 @@ Sitemap: https://2core.vercel.app/sitemap.xml
 
 # start of file
 
-User-agent: *
+user-agent: *
 allow: /
 
-User-agent: *
-disallow: *
