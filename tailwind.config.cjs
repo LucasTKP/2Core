@@ -10,7 +10,10 @@ module.exports = {
 				terciary: '#73AFCB',
 				lightBlue: '#1BC7E2'
 			},
-
+			container: {
+				padding: '2rem',
+				center: true
+			},
 			dropShadow: {
 				'line': '0 5px 10px rgba(255, 255, 255, 0.95)',
 			},

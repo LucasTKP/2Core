@@ -1,0 +1,40 @@
+---
+import LineLight from "./subComponents/LineLight.astro";
+---
+
+<section id="contact" class="w-full pb-[80px] bg-gradient-to-b from-primary to-[#014976]  flex justify-center">
+    <div class="w-11/12 flex flex-col max-md:items-center justify-center">
+        <LineLight />
+        <p class="text-lightBlue mt-[25px] font-[500] text-[2.6rem] max-sm:text-[2.2rem] max-ls:text-[2rem] font-Inter max-ls:text-center">Contate-nos agora:</p>
+        <p class="text-[#B9DCED] mt-[30px] text-[5rem] max-lg:text-[3.8rem] max-md:text-[3.3rem] max-sm:text-[3rem] max-ls:text-[2.5rem] max-md:text-center font-[500] font-Jost">Transforme a maneira que sua<br />empresa é vista com a 2Core!</p>
+        <p class="text-white mt-[30px] text-[5rem] max-lg:text-[3.8rem] max-md:text-[3.3rem] max-sm:text-[3rem] max-ls:text-[2.5rem] max-md:text-center font-[500] font-Jost">Entre em contato:</p>
+        <label class="flex justify-center max-xl:flex-col max-xl:items-center">
+            <p class="text-white mt-[30px] text-[4rem] max-lg:text-[3.8rem] max-md:text-[3.3rem] max-sm:text-[3rem] max-ls:text-[2.5rem] max-md:text-center font-[500] font-Jost mr-[10px]">Olá, meu nome é </p>
+            <input class="text-[#A1A1A1] w-[40%] max-xl:w-[80%] bg-transparent text-[4rem] max-lg:text-[3.8rem] max-md:text-[3.3rem] max-sm:text-[3rem] max-ls:text-[2.5rem] border-b-2 border-solid border-[#A1A1A1] outline-none self-end max-xl:self-center"/>
+            <p class="text-white mt-[30px] text-[4rem] max-lg:text-[3.8rem] max-md:text-[3.3rem] max-sm:text-[3rem] max-ls:text-[2.5rem] max-md:text-center font-[500] font-Jost ml-[10px]">e queria saber </p>
+        </label>
+
+        <div class="flex max-xl:flex-col  mt-[30px] items-center justify-center">
+            <p class="text-white self-start max-xl:self-center text-[4rem] max-lg:text-[3.8rem] max-md:text-[3.3rem] max-sm:text-[3rem] max-ls:text-[2.5rem] max-md:text-center font-[500] font-Jost mr-[10px]">Mais sobre </p>
+            <select name="select" class="bg-transparent text-[#A1A1A1] rounded-[10px] border-none outline-none text-[4rem] max-lg:text-[3.8rem] max-md:text-[3.3rem] max-sm:text-[3rem] max-ls:text-[2.5rem]">
+                <option value="E-commerc" class="bg-transparent text-black">E-commerc</option>
+                <option value="Home-Page" class="bg-transparent text-black">Home-Page</option>
+                <option value="Softwares" class="bg-transparent text-black">Softwares</option>
+              </select>
+        </div>
+
+        <label class="flex items-center justify-center max-xl:flex-col max-xl:items-center">
+            <p class="text-white mt-[30px] text-[4rem] max-lg:text-[4rem] max-md:text-[3.3rem] max-sm:text-[3rem] max-ls:text-[2.5rem] max-md:text-center font-[500] font-Jost mr-[10px]">Entre em contato por esse email: </p>
+            <input class="text-[#A1A1A1] w-[40%] max-xl:w-[80%]  bg-transparent text-[4rem] max-lg:text-[3.8rem] max-md:text-[3.3rem] max-sm:text-[3rem] max-ls:text-[2.5rem] border-b-2 border-solid border-[#A1A1A1] outline-none self-end max-xl:self-center font-Jost "/>
+        </label>
+
+        <div class="self-start justify-self-start">
+            <div class="group inline-flex mt-[50px] items-center">
+                <button class="group-hover:scale-110 flex justify-center items-center w-[100px] max-md:w-[80px] max-sm:w-[60px] h-[100px] max-md:h-[80px] max-sm:h-[60px] bg-gradient-to-b from-[#014976] to-primary rounded-[100%] border-2 border-solid border-black">
+                    <img src="/icons/iconArrowRight.svg" alt="flecha apontando pra direita" class="w-[50px] max-md:w-[40px] max-sm:w-[30px] max-md:h-[40px] max-sm:h-[30px] h-[50px]"/>
+                </button>
+                <p class="group-hover:scale-110 ml-[20px] text-lightBlue font-[500] text-[2.6rem] max-sm:text-[2.2rem] max-ls:text-[2rem] font-Inter">Enviar</p>
+            </div>
+        </div>
+    </div>
+</section>
