@@ -1,0 +1,7 @@
+Sitemap: https://2core.vercel.app/sitemap.xml
+
+# start of file
+
+user-agent: *
+allow: /
+
