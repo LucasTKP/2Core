@@ -3,37 +3,81 @@ import LineLight from "./subComponents/LineLight.astro";
 ---
 
 
-<div class="w-full pb-[60px] bg-gradient-to-b from-primary to-[#0D094F] flex justify-center">
-    <div class="w-11/12 inline-flex flex-col max-md:items-center ">
+<section id="blog" class="w-full pb-[20px] bg-primary flex justify-center">
+    <div class="w-11/12 inline-flex flex-col max-md:items-center">
         <LineLight />
-        <p class="text-white mt-[30px] text-[5rem] max-lg:text-[3.8rem] max-md:text-[3.3rem] max-sm:text-[3rem] max-ls:text-[2.5rem] max-md:text-center font-[500] font-Jost">Saiba como fazer sua empresa crescer!</p>
-        <p class="text-lightBlue mt-[25px] max-w-[360px] font-[500] text-[2.6rem] max-sm:text-[2.2rem] max-ls:text-[2rem] font-Inter max-ls:text-center">Blog -</p>
-        <div class="flex justify-self-center self-center w-full   max-sm:h-full  max-sm:flex-col max-sm:items-center">
-                <div class="bg-[#006494] w-[6%] min-w-[50px] max-sm:w-full max-sm:min-h-[50px]  h-full flex justify-center items-center relative rounded-[12px]">
-                    <p class="rotate-[270deg] max-sm:rotate-[0deg] text-[#B9DCED] w-[300px]  text-[5rem] max-lg:text-[2.8rem] max-md:text-[2.4rem] text-center absolute font-[400]">Último post</p>
+        <p class="text-white mt-[20px] text-[4.5rem] max-lg:text-[3.8rem] max-md:text-[3.3rem] max-sm:text-[3rem] max-ls:text-[2.5rem] max-md:text-center font-[500] font-Jost">Saiba como fazer sua empresa crescer!</p>
+        <p class="text-lightBlue mt-[10px] max-w-[360px] font-[500] text-[2.6rem] max-sm:text-[2.2rem] max-ls:text-[2rem] font-Inter max-ls:text-center">Blog -</p>
+        <p class="text-[2rem] max-sm:text-[1.8rem] mt-[10px] font-[400] max-md:text-center">Receba atualização dos nossos posts</p>
+        <div class="flex jus border-2 w-[550px] max-md:w-[90%] h-[55px] max-md:h-[50px] max-sm:h-[45px] border-lightBlue border-solid rounded-[50px] mt-[20px]">
+            <div class="w-[70%] h-full relative">        
+                <p class="absolute text-lightBlue bg-transparent text-[1.6rem] top-[-15px] left-[30px] px-[10px] py-[2px]">Email</p>
+                <input class="rounded-[50px] w-full h-full bg-transparent px-[7px] max-sm:px-[2px] ml-[10px] text-secondary placeholder:text- font-[500] text-[2.2rem] max-sm:text-[2rem] max-ls:text-[1.8rem] outline-none " placeholder="Digite seu email"/>
+            </div>
+            <button class="w-[30%] bg-secondary rounded-[50px] font-[500] text-[2rem] max-sm:text-[1.8rem] max-ls:text-[1.6rem] hover:bg-[#869fe2]">Entrar!</button>
+        </div>
+
+        <boxModel class="mt-[20px] flex flex-wrap max-md:justify-center items-center">
+            <div class="hover:scale-105 flex flex-col  justify-center max-h-[492px] p-[3px] items-center bg-gradient-to-b from-[#888888] to-[#B9DCED] rounded-[16px]">
+                <div class="relative">
+                    <img src="/img/device.jpg" alt="" class="rounded-[16px] w-[680px] h-[486px]  max-md:w-[550px] max-sm:w-[360px] max-ls:w-[280px]"/>
+                    <p class="text-[1.8rem] max-ls:text-[1.6rem] fonrt-Jost bg-secondary px-[10px] py-[3px] absolute top-[25px] max-ls:top-[10px] left-[20px] max-ls:left-[10px] rounded-[50px] ">Computadores</p>
+                    <div class="w-full h-[30%]  absolute bottom-0 rounded-b-[16px] backdrop-blur-[6px] bg-terciary/70">
+                        <div class="mx-[5px]  flex items-center justify-between">
+                            <p class="max-w-[90%] max-md:max-w-full  font-Jost font-[400] text-[3rem] max-md:text-[2.3rem] max-sm:text-[2rem] max-ls:text-[1.6rem]">Qual computador é melhor para abrir uma tech startup?</p>
+                            <img class="w-[50px] h-[50px] rounded-full bg-white max-md:hidden" alt=""/>
+                        </div>
+                        <div class="mx-[5px] flex mt-[5px] justify-between">
+                            <p class="max-w-[90%] font-Jost font-[400] text-[2.2rem] max-md:text-[2rem] text-[#B9DCED] max-sm:hidden">Descubra as príncipais marcas e modelos..</p>
+                            <button class="w-[91px] max-sm:w-[80px] max-ls:w-[50px] h-[43px] max-sm:h-[38px] max-ls:h-[30px] bg-[rgba(185, 220, 237, 0.47)] rounded-[17px] max-md:rounded-[10px] flex justify-center items-center border-[3px] max-ls:border-[2px] border-solid border-primary font-[500] text-[2rem] max-md:text-[1.8] max-ls:text-[1.6rem] max-md:absolute max-md:right-[5px] max-ls:right-[4px] max-md:bottom-[5px] max-ls:bottom-[4px]">
+                                Ler
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="max-sm:contents flex flex-col ml-[20px]  max-2lg:ml-[0px]">
+                <div class="hover:scale-105 flex max-2lg:mt-[20px] flex-col justify-center items-center p-[3px] bg-gradient-to-b from-lightBlue to-[#B9DCED] rounded-[16px]">
+                    <div class="relative">
+                        <img src="/img/clothing.png" alt="" class="rounded-[16px] w-[556px] max-2lg:w-[680px]  max-md:w-[550px] max-sm:w-[360px] max-ls:w-[280px] h-[229px] max-sm:h-[271px] max-ls:h-[200px]"/>
+                        <p class="text-[1.8rem] max-ls:text-[1.6rem] fonrt-Jost bg-secondary px-[10px] py-[3px] absolute top-[25px] max-ls:top-[10px] left-[20px] max-ls:left-[10px]  rounded-[50px] ">E-commerces</p>
+                        <div class="w-full h-[33%] max-ls:h-[30%]  absolute bottom-0 rounded-b-[16px] backdrop-blur-[6px] bg-terciary/70">
+                            <div class="mx-[5px]  flex items-center justify-between">
+                                <p class="max-w-[90%] max-md:max-w-full font-Jost font-[400] text-[2.2rem] max-sm:text-[2rem] max-ls:text-[1.6rem]">Como sair de uma loja de bairro e abrir a próxima C&A?</p>
+                                <button class="w-[91px] max-sm:w-[80px] max-ls:w-[50px] h-[43px] max-sm:h-[38px] max-ls:h-[30px] bg-[rgba(185, 220, 237, 0.47)] rounded-[17px] max-md:rounded-[10px] flex justify-center items-center border-[3px] max-ls:border-[2px]  border-solid border-primary font-[500] text-[2rem] max-md:text-[1.8] max-ls:text-[1.6rem] max-md:absolute max-md:right-[5px] max-ls:right-[4px] max-md:bottom-[5px] max-ls:bottom-[4px]">
+                                    Ler
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="w-[40%] max-sm:w-[80%] pb-[30px]  max-sm:mt-[30px] h-full max-sm:h-full col-span-4relative border-[3px] rounded-[12px] border-solid border-terciary relative">
-                    <img class=" w-full h-[64%] max-sm:h-[300px] max-ls:h-[200px] rounded-[12px]" src="/img/notebook.jpg" alt="imagem da materia postada em nosso blog " />
-                    <p class="text-[4rem] max-xl:text-[3.5rem] max-lg:text-[3rem] max-md:text-[2rem] font-[300] mt-[20px] max-sm:mt-[10px] before:w-[4px] ml-[50px] max-lg:ml-[0px] max-lg:p-[3px] max-lg:mt-[0px]  before:h-[100px] before:block before:bg-lightBlue before:absolute before:left-10 before:mt-[20px] max-lg:before:hidden">Como crescer no instagram?</p>
+                <div class="hover:scale-105 flex flex-col  mt-[20px] justify-center items-center p-[3px] bg-gradient-to-b from-lightBlue to-[#B9DCED] rounded-[16px]">
+                    <div class="relative">
+                        <img src="/img/clothing.png" alt="" class="rounded-[16px]  w-[556px] max-2lg:w-[680px] max-md:w-[550px] max-sm:w-[360px] max-ls:w-[280px]  h-[229px] max-sm:h-[271px] max-ls:h-[200px]"/>
+                        <p class="text-[1.8rem] max-ls:text-[1.6rem] fonrt-Jost bg-secondary px-[10px] py-[3px] absolute top-[25px] max-ls:top-[10px] left-[20px] max-ls:left-[10px]  rounded-[50px] ">E-commerces</p>
+                        <div class="w-full h-[33%] max-ls:h-[30%]  absolute bottom-0 rounded-b-[16px] backdrop-blur-[6px] bg-terciary/70">
+                            <div class="mx-[5px]  flex items-center justify-between">
+                                <p class="max-w-[90%] max-md:max-w-full  font-Jost font-[400] text-[2.2rem] max-sm:text-[2rem] max-ls:text-[1.6rem]">Saiba como uma home-page pode beneficiar seu negócio!</p>
+                                <button class="w-[91px] max-sm:w-[80px] max-ls:w-[50px] h-[43px] max-sm:h-[38px] max-ls:h-[30px] bg-[rgba(185, 220, 237, 0.47)] rounded-[17px] max-md:rounded-[10px] flex justify-center items-center border-[3px] max-ls:border-[2px]  border-solid border-primary font-[500] text-[2rem] max-md:text-[1.8] max-ls:text-[1.6rem] max-md:absolute max-md:right-[5px] max-ls:right-[4px] max-md:bottom-[5px] max-ls:bottom-[4px]">
+                                    Ler
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-            <div class="h-full w-[60%] max-sm:mt-[50px] max-sm:w-full">
-                <div class="bg-[#006494] hidden max-sm:w-full max-sm:min-h-[50px]  max-sm:flex justify-center items-center relative rounded-[12px]">
-                    <p class="rotate-[270deg] max-sm:rotate-[0deg]  text-[#B9DCED] w-[300px]  text-[5rem] max-lg:text-[3rem] max-md:text-[2.4rem] text-center absolute font-[400]">Mais Vistos</p>
-                </div>
-                <div class="flex h-[85%] w-full max-sm:mt-[20px] max-sm:flex-col max-sm:items-center">
-                    <div class="w-[50%] max-sm:w-[80%] h-full relative border-[3px] rounded-[12px] border-solid border-terciary">
-                        <img class=" w-full h-[50%] max-sm:h-[300px] max-ls:h-[200px] rounded-[12px]" src="/img/tech.jpg" alt="imagem da materia postada em nosso blog"/>
-                        <p class="text-[3rem] max-xl:text-[2.5rem] max-lg:text-[2rem] max-md:text-[1.8rem] font-[300] p-[10px] before:w-[4px] ml-[20px] max-lg:ml-[0px] max-lg:p-[3px] before:h-[80px] before:block before:bg-lightBlue before:absolute before:left-5 before:mt-[5px]  max-lg:before:hidden">Como crescer no instagram?</p>
-                    </div>
-                    <div class="w-[50%] max-sm:w-[80%] h-full relative border-[3px] rounded-[12px] border-solid border-terciary max-sm:mt-[20px]">
-                        <img class=" w-full h-[50%] max-sm:h-[300px] max-ls:h-[200px] rounded-[12px]" src="/img/device.jpg" alt="imagem da materia postada em nosso blog"/>
-                        <p class="text-[3rem] max-xl:text-[2.5rem] max-lg:text-[2rem] max-md:text-[1.8rem] font-[300] p-[10px] before:w-[4px] ml-[20px] max-lg:ml-[0px]  max-lg:p-[3px] before:h-[80px] before:block before:bg-lightBlue before:absolute before:left-5 before:mt-[5px] max-lg:before:hidden">Como crescer no instagram?</p>
-                    </div>
-                </div>
-                <p class="text-[#B9DCED] max-sm:hidden bg-[#006494] w-full h-[15%] text-[5rem] max-lg:text-[3.5rem] font-[400] flex items-center justify-center rounded-[12px]">Mais vistos</p>
+            </div>
+        </boxModel>
+        <div>
+            <div class="group inline-flex items-center mt-[30px] max-sm:mt-[20px]">
+                <a href="contact" class="group-hover:scale-110 group-hover:text-[#cdcdcd] underline font-[500] text-[2.8rem] max-sm:text-[2rem]   mr-[10px]">
+                    Ler mais
+                </a>
+                <img src="/icons/arrowRight.svg"  class="group-hover:scale-110 group-hover:invert-[20%] w-[60px] h-[60px] max-md:w-[50px] max-md:h-[50px] max-sm:w-[40px] max-sm:h-[40px]  cursor-pointer " alt="Icone de uma flecha"/>
             </div>
         </div>
+
     </div>
-</div>
+</section>
