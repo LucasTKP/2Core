@@ -10,6 +10,12 @@ var urlIcon:string = typeIcon
 
 ---
 
+<div class="relative w-[45%] max-sm:w-[80%] mt-[100px] max-sm:mt-[30px] max-sm:border-solid max-sm:border-2 max-sm:border-lightBlue max-sm:rounded-[10px] max-sm:px-[10px] max-sm:py-[20px] max-sm:flex max-sm:flex-col max-sm:items-center">
+
+    <Image src={import(`../../../public/icons/groupBall${urlIcon}.png`)} class="w-[200px] h-[82px]  max-lg:w-[150px] max-lg:h-[62px] max-md:w-[130px] max-md:h-[52px] max-ls:w-[100px] max-ls:h-[42px]"  alt="descriptive text" />
+
+    <p class="text-[4.5rem] max-lg:text-[3rem] max-md:text-[2rem] font-[300]">{titleCaracteristics}</p>
+    <p class="text-[3.2rem] max-lg:text-[2rem] max-md:text-[1.8rem] max-ls:text-[1.5rem]  font-[500] max-w-full before:w-[2px] before:h-[200px] max-lg:before:h-[150px] max-sm:before:hidden before:block before:absolute before:left-0 mt-[20px] max-sm:mt-[10px] before:bg-lightBlue ml-[30px] max-sm:ml-[0] max-sm:text-center max-sm:px-[20px] max-ls:px-[5px]">{textCaracteristics}</p>
 <div class="relative w-[45%] max-sm:w-[80%] mt-[30px] max-sm:mt-[30px] max-sm:border-solid max-sm:border-2 max-sm:border-lightBlue max-sm:rounded-[10px] max-sm:px-[10px] max-sm:py-[20px] max-sm:flex max-sm:flex-col max-sm:items-center">
     <Image src={import(`../../../public/icons/groupBall${urlIcon}.png`)} class="w-[160px] h-[60px]  max-lg:w-[150px] max-lg:h-[62px] max-md:w-[130px] max-md:h-[52px] max-ls:w-[100px] max-ls:h-[42px]"  alt="descriptive text" />
     <p class="text-[3.5rem] max-lg:text-[3rem] max-md:text-[2rem] font-[300]">{titleCaracteristics}</p>
