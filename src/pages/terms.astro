@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Terms from '../components/Terms.astro';
+
+---
+
+<Layout title="2Core">
+	<main class="flex flex-col items-center">
+		<div class="max-w-[1920px] w-full">
+			<Header logo="/#hero/" about="/#about" features="/#features" blog="/#blog" contact="/#contact"/>
+			<Terms />
+			<Footer about="/#about" features="/#features" blog="/#blog" contact="/#contact"/>
+		</div>
+	</main>
+</Layout>

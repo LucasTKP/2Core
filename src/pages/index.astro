@@ -15,7 +15,7 @@ import Footer from '../components/Footer.astro';
 <Layout title="2Core">
 	<main class="flex flex-col items-center">
 		<div class="max-w-[1920px] w-full">
-			<Header />
+			<Header logo="#hero" about="#about" features="#features" blog="#blog" contact="#contact"/>
 			<Hero />
 			<About />
 			<!-- <Services /> -->
@@ -23,7 +23,7 @@ import Footer from '../components/Footer.astro';
 			<ShowBlog />
 			<Contact />
 			<ButtonSocialNetwork />
-			<Footer />
+			<Footer about="#about" features="#features" blog="#blog" contact="#contact"/>
 		</div>
 	</main>
 </Layout>
