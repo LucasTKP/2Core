@@ -1,29 +1,40 @@
-<footer class="w-full z-10 flex justify-center items-center bg-gradient-to-b from-primary to-white/10 backdrop-blur"> 
+---
+export interface Props{
+    logo:string
+    about:string
+    features:string
+    blog:string
+    contact:string
+}
+
+const {about, features, blog, contact} = Astro.props
+---
+
+<footer class="w-full z-10 flex justify-center items-center bg-gradient-to-b from-primary to-[#3f3e3e] backdrop-blur"> 
     <div class="w-11/12 flex justify-between py-[20px]">
         <img src="/img/companyLogo.svg" class="w-[120px] h-[56px] max-sm:w-[90px] max-sm:h-[36px] hover:scale-110" alt="Logo 2Core"/>
         <div class="ml-[20px] w-[80%] flex flex-wrap justify-between">
             <div class="flex flex-col mt-[10px] mr-[15px]">
                 <p class="font-[500] text-[2.4rem] max-lg:text-[2rem] max-md:text-[1.8rem]">Menu</p>
-                <a href="#about" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] mt-[10px] max-md:text-[1.4rem]">Sobre nós</a>
-                <a href="#services" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">Serviços</a>
-                <a href="#features" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">Características</a>
-                <a href="#blog" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">Blog</a>
-                <a href="#contact" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">Contato</a>
+                <a href={about} class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] mt-[10px] max-md:text-[1.4rem]">Sobre nós</a>
+                <a href={features}  class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">Características</a>
+                <a href={blog}  class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">Blog</a>
+                <a href={contact}  class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">Contato</a>
             </div>
     
             <div class="mr-[15px] flex flex-col mt-[10px]">
                 <p class="font-[500] text-[2.4rem] max-lg:text-[2rem] max-md:text-[1.8rem]">Redes Sociais</p>
-                <a href="#about" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] mt-[10px]">Twitter</a>
-                <a href="#about" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">Facebook</a>
-                <a href="#about" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">Instagram</a>
-                <a href="#about" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">Linked-in</a>
+                <a href="#about" target="_blank" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] mt-[10px]">Twitter</a>
+                <a href="#about" target="_blank" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">Facebook</a>
+                <a href="https://www.instagram.com/2core.company/" target="_blank" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">Instagram</a>
+                <a href="#about" target="_blank" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">Linked-in</a>
 
             </div>
     
             <div class="flex flex-col mt-[10px]">
                 <p class="font-[500] text-[2.4rem] max-lg:text-[2rem] max-md:text-[1.8rem]">Contratos</p>
-                <a href="#about" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem] mt-[10px]">Termos e condições <br/> Prestação de serviço</a>
-                <a href="#about" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">2Core © 2022 - Alguns  <br/> direitos reservados.</a>
+                <a href="/terms/" class="font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem] mt-[10px]">Termos e condições <br/> Prestação de serviço</a>
+                <a href="/terms/" class="mt-[20px] font-[400] text-[2rem] text-[#A0CED9] max-lg:text-[1.6rem] max-md:text-[1.4rem]">2Core © 2022 - Alguns  <br/> direitos reservados.</a>
             </div>
         </div>
     </div>

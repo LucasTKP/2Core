@@ -1,7 +1,20 @@
-<div>
-    <header id="header" class="w-full z-10 flex justify-center fixed py-[5px]"> 
-        <div class="w-11/12 flex justify-between items-end">
-            <a href="#hero">
+---
+export interface Props{
+    logo:string
+    about:string
+    features:string
+    blog:string
+    contact:string
+}
+
+const {logo, about, features, blog, contact} = Astro.props
+---
+
+
+<section>
+    <header id="header" class="z-10 w-full flex justify-center fixed bg-primary/20 py-[5px] backdrop-blur-[2px]"> 
+        <div class="w-11/12 flex justify-between items-end backdrop-blur-sm">
+            <a href={logo}>
                 <img  src="/img/companyLogo.svg" class="w-[60px] h-[56px] max-sm:w-[50px] max-sm:h-[36px] hover:scale-110" alt="Logo 2Core"/>
             </a>
             <button id="buttonMenu" class="w-[70px] text-[2.6rem]  max-sm:text-[2.2rem]  hover:scale-110 font-Inter h-[56px] max-sm:h-[46px]  flex items-end font-[600] underline">
@@ -12,24 +25,24 @@
     <div id="divMenu" class="z-10 duration-300 flex  fixed px-[60px]  max-lg:px-[50px] max-sm:px-[30px] max-ls:px-[20px]  h-full right-[-400px] justify-center bg-[#1c1c1c]">
         <button aria-label="Fechar" id="buttonClose" class="w-[4px] pointer  h-[40px] max-sm:h-[30px] bg-white absolute right-[40px] top-[20px] rotate-45 before:bg-white before:w-[4px] before:h-[40px] before:max-sm:h-[30px] before:block before:rotate-90"></button>
         <div class="mt-[50px] flex flex-col font-Jost">
-            <button aria-label="Sobre nós" class="border-solid mt-[20px] border-white border-2 rounded-[12px] hover:scale-110 shadow-md shadow-[rgba(0,0,0,0.7)] ">
-                <a href="#about" class="text-[3rem] max-lg:text-[2.5rem] max-sm:text-[1.8rem] px-[15px] max-lg:px-[10px] py-[3px]">Sobre nós</a>
+            <button id="buttonAbout" aria-label="Sobre nós" class="border-solid mt-[20px] border-white border-2 rounded-[12px] hover:scale-110 shadow-md shadow-[rgba(0,0,0,0.7)] ">
+                <a href={about} class="text-[3rem] max-lg:text-[2.5rem] max-sm:text-[1.8rem] px-[15px] max-lg:px-[10px] py-[3px]">Sobre nós</a>
             </button>
             <button aria-label="Serviços" class="border-solid mt-[20px] border-white border-2 rounded-[12px] hover:scale-110  shadow-md shadow-[rgba(0,0,0,0.7)] ">
                 <a href="#services" class="text-[3rem] max-lg:text-[2.5rem] max-sm:text-[1.8rem] px-[15px] max-lg:px-[10px] py-[3px]">Serviços</a>
             </button>
-            <button aria-label="Características" class="border-solid mt-[20px] border-white border-2 rounded-[12px] hover:scale-110  shadow-md shadow-[rgba(0,0,0,0.7)] ">
-                <a href="#features" class="text-[3rem] max-lg:text-[2.5rem] max-sm:text-[1.8rem] px-[15px] max-lg:px-[10px] py-[3px]">Características</a>
+            <button id="buttonFeatures" aria-label="Características" class="border-solid mt-[20px] border-white border-2 rounded-[12px] hover:scale-110  shadow-md shadow-[rgba(0,0,0,0.7)] ">
+                <a href={features }class="text-[3rem] max-lg:text-[2.5rem] max-sm:text-[1.8rem] px-[15px] max-lg:px-[10px] py-[3px]">Características</a>
             </button>
-            <button aria-label="Blog" class="border-solid mt-[20px] border-white border-2 rounded-[12px] hover:scale-110  shadow-md shadow-[rgba(0,0,0,0.7)] ">
-                <a href="#blog" class="text-[3rem] max-lg:text-[2.5rem] max-sm:text-[1.8rem] px-[15px] max-lg:px-[10px] py-[3px]">Blog</a>
+            <button id="buttonBlog" aria-label="Blog" class="border-solid mt-[20px] border-white border-2 rounded-[12px] hover:scale-110  shadow-md shadow-[rgba(0,0,0,0.7)] ">
+                <a href={blog} class="text-[3rem] max-lg:text-[2.5rem] max-sm:text-[1.8rem] px-[15px] max-lg:px-[10px] py-[3px]">Blog</a>
             </button>
-            <button aria-label="Contato" class="border-solid mt-[20px] border-white border-2 rounded-[12px] hover:scale-110  shadow-md shadow-[rgba(0,0,0,0.7)] ">
-                <a href="#contact" class="text-[3rem] max-lg:text-[2.5rem] max-sm:text-[1.8rem] px-[15px] max-lg:px-[10px] py-[3px]">Contato</a>
+            <button id="buttonContact" aria-label="Contato" class="border-solid mt-[20px] border-white border-2 rounded-[12px] hover:scale-110  shadow-md shadow-[rgba(0,0,0,0.7)] ">
+                <a href={contact} class="text-[3rem] max-lg:text-[2.5rem] max-sm:text-[1.8rem] px-[15px] max-lg:px-[10px] py-[3px]">Contato</a>
             </button>
         </div>
-    </div>
-</div>
+    </div> 
+</section>
 
 
 
@@ -38,9 +51,14 @@
     const buttonMenu = document.getElementById("buttonMenu") as HTMLElement
     const divMenu = document.getElementById("divMenu") as HTMLElement
     const buttonClose = document.getElementById("buttonClose") as HTMLElement
+    const buttonAbout = document.getElementById("buttonAbout") as HTMLElement
+    const buttonFeatures = document.getElementById("buttonFeatures") as HTMLElement
+    const buttonBlog= document.getElementById("buttonBlog") as HTMLElement
+    const buttonContact = document.getElementById("buttonContact") as HTMLElement
+    
     window.addEventListener("scroll", () => {
         if(scrollY > 75){
-            header.classList.add("backdrop-blur")
+            header.classList.add("backdrop-blur-md")
             // header.classList.add("bg-white/10")
         } else if(scrollY < 75){
             header.classList.remove("backdrop-blur")
@@ -56,6 +74,27 @@
     })
 
     buttonClose.addEventListener("click", () => {
+        divMenu.classList.add("right-[-400px]")
+        divMenu.classList.remove("right-0")
+    })
+
+    buttonAbout.addEventListener("click", () => {
+        divMenu.classList.add("right-[-400px]")
+        divMenu.classList.remove("right-0")
+        console.log("a")
+    })
+
+    buttonFeatures.addEventListener("click", () => {
+        divMenu.classList.add("right-[-400px]")
+        divMenu.classList.remove("right-0")
+    })
+
+    buttonBlog.addEventListener("click", () => {
+        divMenu.classList.add("right-[-400px]")
+        divMenu.classList.remove("right-0")
+    })
+
+    buttonContact.addEventListener("click", () => {
         divMenu.classList.add("right-[-400px]")
         divMenu.classList.remove("right-0")
     })
