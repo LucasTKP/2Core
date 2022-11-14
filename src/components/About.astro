@@ -1,23 +1,20 @@
 ---
 import Cards from './subComponents/Cards.astro'
-import LineLight from './subComponents/LineLight.astro'
-const textCardVelocity:string = "Agilidade e rapidez em nosso trabalho é uma das essências da 2Core. Além do mais, cada minuto conta sem nossos serviços."
-const textCardTechnology:string = "Utilizando as mais atuais e rápidas tecnologias do mercado, entregamos softwares com a melhor qualidade."
-const textCardSecurity:string = "Suas informações estão protegidas conosco, mediante contratos e garantias de primeira categoria."
+const textCardVelocity:string = "E-commerces é o nosso carro chefe. Faça seu negócio vender em qualquer lugar do mundo e aumente suas vendas. Com um preço justo!"
+const textCardTechnology:string = "Páginas web com uma única página. Perfeito para divulgação de sua empresa. Campos para contato e formúlarios para observações."
+const textCardSecurity:string = "Faça sua empresa ficar a um clique de seus clientes. Um Aplicativo ou software permite agilizar tarefas e gerar muita receita para você."
 
 ---
 
 
-<section id="about" class="w-full pb-[20px] bg-primary  flex justify-center">
+<section id="about" class="w-full pb-[20px] flex justify-center">
     <div class="w-11/12 flex flex-col max-md:items-center">
-        <LineLight />
-        <p class="text-lightBlue mt-[15px] max-w-[360px] font-[500] text-[2.6rem] max-sm:text-[2.2rem] max-ls:text-[2rem] font-Inter max-ls:text-center">Por quê nos escolher?</p>
-        <p class="text-white mt-[10px] text-[4.5rem] max-lg:text-[3.8rem] max-md:text-[3.3rem] max-sm:text-[3rem] max-ls:text-[2.5rem] max-md:text-center font-[500] font-Jost">Nosso objetivo é fazer sua empresa<br/> crescer, e fazemos isto muito bem!</p>
-        <p class="text-[#C3C3C3] mt-[30px] text-[2.6rem] max-sm:text-[2.3rem] font-[500] font-Inter">Nossas qualidades:</p>
+        <p class="text-lightBlue mt-[15px] max-w-[360px] font-[500] text-[2.6rem] max-sm:text-[2.2rem] max-ls:text-[2rem] font-Inter max-ls:text-center">O que fazemos de melhor?</p>
+        <p class="text-white mt-[10px] text-[4.5rem] max-lg:text-[3.8rem] max-md:text-[3.3rem] max-sm:text-[3rem] max-ls:text-[2.5rem] max-md:text-center font-[500] font-Jost">Temos os melhores serviços, para as<br/> crescer, melhores empresas.</p>
         <div class="flex max-md:flex-col justify-between flex-wrap"> 
-            <Cards titleCard="Velocidade" textCard={textCardVelocity}/> 
-            <Cards titleCard="Tecnologia" textCard={textCardTechnology}/> 
-            <Cards titleCard="Segurança"  textCard={textCardSecurity}/> 
+            <Cards titleCard="E-commerces" textCard={textCardVelocity}/> 
+            <Cards titleCard="Home Pages" textCard={textCardTechnology}/> 
+            <Cards titleCard="Softwares"  textCard={textCardSecurity}/> 
         </div>
     </div>
 </section>

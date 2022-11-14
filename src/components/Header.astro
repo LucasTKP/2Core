@@ -1,15 +1,15 @@
 <div>
-    <header id="header" class="w-full z-10 flex justify-center fixed from-[RGBA(1,52,83,.3)] to-[RGBA(255,255,255,.3)] "> 
+    <header id="header" class="w-full z-10 flex justify-center fixed py-[5px]"> 
         <div class="w-11/12 flex justify-between items-end">
             <a href="#hero">
-                <img  src="/img/companyLogo.svg" class="w-[120px] h-[56px] max-sm:w-[90px] max-sm:h-[36px] hover:scale-110" alt="Logo 2Core"/>
+                <img  src="/img/companyLogo.svg" class="w-[60px] h-[56px] max-sm:w-[50px] max-sm:h-[36px] hover:scale-110" alt="Logo 2Core"/>
             </a>
-            <button id="buttonMenu" class="w-[70px] max-sm:text-primary text-[2.6rem]  max-sm:text-[2.2rem]  hover:scale-110 font-Inter h-[56px] max-sm:h-[46px]  flex items-end font-[600] underline">
+            <button id="buttonMenu" class="w-[70px] text-[2.6rem]  max-sm:text-[2.2rem]  hover:scale-110 font-Inter h-[56px] max-sm:h-[46px]  flex items-end font-[600] underline">
                 Menu
             </button>
         </div>
     </header>
-    <div id="divMenu" class="z-10 duration-300 flex  fixed px-[60px]  max-lg:px-[50px] max-sm:px-[30px] max-ls:px-[20px]  h-full right-[-400px] justify-center bg-gradient-to-b from-[RGBA(1,52,83)] to-[#307bb0]">
+    <div id="divMenu" class="z-10 duration-300 flex  fixed px-[60px]  max-lg:px-[50px] max-sm:px-[30px] max-ls:px-[20px]  h-full right-[-400px] justify-center bg-[#1c1c1c]">
         <button aria-label="Fechar" id="buttonClose" class="w-[4px] pointer  h-[40px] max-sm:h-[30px] bg-white absolute right-[40px] top-[20px] rotate-45 before:bg-white before:w-[4px] before:h-[40px] before:max-sm:h-[30px] before:block before:rotate-90"></button>
         <div class="mt-[50px] flex flex-col font-Jost">
             <button aria-label="Sobre nós" class="border-solid mt-[20px] border-white border-2 rounded-[12px] hover:scale-110 shadow-md shadow-[rgba(0,0,0,0.7)] ">
@@ -41,10 +41,10 @@
     window.addEventListener("scroll", () => {
         if(scrollY > 75){
             header.classList.add("backdrop-blur")
-            header.classList.add("bg-gradient-to-r")
+            // header.classList.add("bg-white/10")
         } else if(scrollY < 75){
             header.classList.remove("backdrop-blur")
-            header.classList.remove("bg-gradient-to-r")
+            header.classList.remove("bg-white/10")
         }
     })
     
