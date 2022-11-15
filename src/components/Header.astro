@@ -13,7 +13,7 @@ const {logo, about, features, blog, contact} = Astro.props
 
 <section>
     <header id="header" class="z-10 w-full flex justify-center fixed bg-primary/20 py-[5px] backdrop-blur-[2px]"> 
-        <div class="w-11/12 flex justify-between items-end backdrop-blur-sm">
+        <div class="w-11/12 flex justify-between items-end">
             <a href={logo}>
                 <img  src="/img/companyLogo.svg" class="w-[60px] h-[56px] max-sm:w-[50px] max-sm:h-[36px] hover:scale-110" alt="Logo 2Core"/>
             </a>
@@ -28,9 +28,9 @@ const {logo, about, features, blog, contact} = Astro.props
             <button id="buttonAbout" aria-label="Sobre nós" class="border-solid mt-[20px] border-white border-2 rounded-[12px] hover:scale-110 shadow-md shadow-[rgba(0,0,0,0.7)] ">
                 <a href={about} class="text-[3rem] max-lg:text-[2.5rem] max-sm:text-[1.8rem] px-[15px] max-lg:px-[10px] py-[3px]">Sobre nós</a>
             </button>
-            <button aria-label="Serviços" class="border-solid mt-[20px] border-white border-2 rounded-[12px] hover:scale-110  shadow-md shadow-[rgba(0,0,0,0.7)] ">
+            <!-- <button aria-label="Serviços" class="border-solid mt-[20px] border-white border-2 rounded-[12px] hover:scale-110  shadow-md shadow-[rgba(0,0,0,0.7)] ">
                 <a href="#services" class="text-[3rem] max-lg:text-[2.5rem] max-sm:text-[1.8rem] px-[15px] max-lg:px-[10px] py-[3px]">Serviços</a>
-            </button>
+            </button> -->
             <button id="buttonFeatures" aria-label="Características" class="border-solid mt-[20px] border-white border-2 rounded-[12px] hover:scale-110  shadow-md shadow-[rgba(0,0,0,0.7)] ">
                 <a href={features }class="text-[3rem] max-lg:text-[2.5rem] max-sm:text-[1.8rem] px-[15px] max-lg:px-[10px] py-[3px]">Características</a>
             </button>
