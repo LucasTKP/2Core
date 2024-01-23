@@ -2,7 +2,7 @@
 <p align="center">Este projeto foi uma landing page apresentando uma empresa de desenvolvimento de software e marketing digital</p> <br />
 
 ### 🔗 Links:
-<a href="https://github.com/LucasTKP/2Core">Projeto LandingPage 2Core</a></br>
+<a href="https://github.com/LucasTKP/2Core">Projeto Landing Page 2Core</a></br>
 <a href="https://2core.vercel.app/">Deploy</a></br>
 
 </br>
