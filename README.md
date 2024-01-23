@@ -1,49 +1,35 @@
-# Welcome to [Astro](https://astro.build)
+<h1 align="center">LandingPage 2Core</h1>
+<p align="center">Este projeto foi uma landing page apresentando uma empresa de desenvolvimento de software e marketing digital</p> <br />
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+### 🔗 Links:
+<a href="https://github.com/LucasTKP/2Core">Projeto LandingPage 2Core</a></br>
+<a href="https://2core.vercel.app/">Deploy</a></br>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+</br>
+</br>
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+### 💻 Projeto:
 
+Este projeto consiste em uma landing page apresentando uma empresa de tecnologia.
 
-## 🚀 Project Structure
+<br /> <br />
 
-Inside of your Astro project, you'll see the following folders and files:
+### 🎯 Objetivo:
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Criar um site de alta conversão para uma empresa de tecnologia.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+<br /> <br />
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### ⚙️ Tecnologias:
 
-Any static assets, like images, can be placed in the `public/` directory.
+- Astro
+- Css
+- JavaScript
 
-## 🧞 Commands
+  <br /> <br />
 
-All commands are run from the root of the project, from a terminal:
+### 📷 Tela principal:
 
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
+![Screenshot_2](https://github.com/LucasTKP/2Core/assets/101598532/ceb70d24-1f48-4d03-8379-28421962737b)
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+<br />
